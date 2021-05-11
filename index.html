@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Manthan Pandey</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Rozha+One');
+        @import url('https://fonts.googleapis.com/css?family=Raleway|Rozha+One');
+        .col4 {width: 33.33333333%; float: left; position: relative;}
+        .transition {-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease;  transition: all .5s ease;}
+        body .container {width: 100%; margin: 0 auto;}
+        .fx1 .item, .fx2 .item, .fx3 .item, .fx4 .item, .fx5 .item {margin: 10px 0;}
+
+        /* active on focus for accessibility tab navigation */
+
+
+
+        .fx2 .item {
+          padding: 0;
+        }
+        .fx2 .item img {
+          padding: 0 !important; 
+          display: block; 
+          max-width: 100%; 
+          height: auto;
+        }
+        .fx2 a:hover .item img, .fx2 a:focus .item img {
+          opacity: 0.1; 
+          -webkit-transform: scale(0.95); 
+          transform: scale(0.95);
+        }
+        .fx2 h4, .fx2 p, .fx2 span {
+          -webkit-transition: all .5s ease; 
+          -moz-transition: all .5s ease; 
+          -o-transition: all .5s ease;  
+          transition: all .5s ease;
+        } 
+        .fx2 a .item h4 {
+          font-family: 'Raleway', sans-serif; 
+          font-size: 20px; 
+          position: absolute; 
+          color:#fb8520; 
+          text-transform: uppercase; 
+          letter-spacing: 2px; 
+          position: absolute; 
+          top:42%; 
+          left:0; 
+          right:0; 
+          margin:0 auto; 
+          text-align: center; 
+          -webkit-filter: blur(5px); 
+          filter: blur(5px); 
+          opacity: 0;
+        }
+        .fx2 a:hover .item h4, .fx2 a:focus .item h4 {
+          -webkit-filter: blur(0px); 
+          filter: blur(0px); 
+          opacity: 1;
+        }
+        .fx2 a .item p {
+          font-family: 'Raleway', sans-serif; 
+          font-size: 15px; 
+          font-weight: 900;
+          position: absolute; 
+          color:#cbd444; 
+          text-transform: uppercase; 
+          letter-spacing: 2px; 
+          position: absolute; 
+          top:53%; 
+          left:0; 
+          right:0; 
+          margin:0 auto; 
+          text-align: center; 
+          opacity: 0;}
+        .fx2 a:hover .item p, .fx2 a:focus .item p {
+          opacity: 1;
+        }
+
+        @media screen and (max-width: 991px) {
+        .col4 {width: 50%;}
+        .fx5 a .item h4 {font-size: 13px;}
+        }   
+
+        @media screen and (max-width: 580px) {
+        .col4 {width: 100%;}
+        } 
+
+
+.circle-chart {
+  width: 250px;
+  height: 150px;
+}
+
+.circle-chart__circle {
+  stroke: #00acc1;
+  stroke-width: 2;
+  stroke-linecap: square;
+  fill: none;
+  animation: circle-chart-fill 2s reverse; /* 1 */ 
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+.circle-chart__circle--negative {
+  transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+}
+
+.circle-chart__background {
+  stroke: #efefef;
+  stroke-width: 2;
+  fill: none; 
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+.circle-chart__percent {
+  alignment-baseline: central;
+  text-anchor: middle;
+  font-size: 8px;
+}
+
+.circle-chart__subline {
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 3px;
+}
+
+.success-stroke {
+  stroke: #00C851;
+}
+
+.warning-stroke {
+  stroke: #ffbb33;
+}
+
+.danger-stroke {
+  stroke: #ff4444;
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.skills{
+color: black;
+}
+
+.skills_section{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.skill-head{
+  margin: 80px 0;
+}
+
+.skill-head h1{
+  font-size: 60px;
+  font-weight: 700;
+}
+
+
+.skill-head p{
+  margin-bottom: 10px;
+}
+
+.skills-area {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-skill {
+  width: 25%;
+  margin-bottom: 80px;
+}
+
+.success-stroke {
+  stroke: rgb(129, 86, 252);
+}
+
+.circle-chart__background {
+  stroke: #ede4e4;
+  stroke-width: 1;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+	.skill-head {
+		margin: 50px 0;
+	}	
+
+	.skill-head h1 {
+		font-size: 30px;
+	}
+
+	.skill-icon {
+		width: 50%;
+	}
+	
+	.skill-icon i {
+		font-size: 70px;
+	}
+
+	.single-skill {
+		width: 50%;
+	}
+
+	.circle-chart {
+		width: 130px;
+		height: 130px;
+	}
+}  
+    </style>
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Manthan</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>                   
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#skill" class="nav-link"><span data-hover="Skills">Skills</span></a>
+                  </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-8 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Manthan Pandey</span>
+                                    <span class="animated-item">Full Stack Developer</span>
+                                    <span class="animated-item">Android/IOS Developer</span>
+                                </div>
+                        </h1>
+
+                        <p>Building a successful product is a challenge. I am highly energetic in user experience design, interfaces, web and mobile apps development.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="./cv/resume.pdf" target="_blank" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/t.svg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                        <h2>Popular Projects that I Worked</h2>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info" >
+                            <div class="fx2">
+
+                              <a href="https://www.cici.co.in/" target="_blank">
+                                  <div class="item">
+                                      <img class="transition img-responsive" src="images/project/1.png">
+                                      <h4>Corporate Website (PHP)</h4>
+                                      <p>Visit: https://www.cici.co.in/</p>
+                                  </div>
+                              </a>                            
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <div class="fx2">
+
+                              <a href="https://www.visasavenue.com/" target="_blank">
+                                  <div class="item">
+                                      <img class="transition img-responsive" src="images/project/2.png">
+                                      <h4>Visa Services (MERN)</h4>
+                                      <p>Visit: https://www.visasavenue.com/</p>
+                                  </div>
+                              </a>                            
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                             <div class="fx2">
+
+                              <a href="https://paxcel.ai/" target="_blank">
+                                  <div class="item">
+                                      <img class="transition img-responsive" src="images/project/3.png">
+                                      <h4>AI Driven Website (MERN) </h4>
+                                      <p>Visit: https://paxcel.ai/</p>
+                                  </div>
+                              </a>                            
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                             <div class="fx2">
+
+                              <a href="http://www.mattison.co.uk/" target="_blank">
+                                  <div class="item">
+                                      <img class="transition img-responsive" src="images/project/4.png">
+                                      <h4>Financial Website (CMS)</h4>
+                                      <p>Visit: https://www.mattison.co.uk/</p>
+                                  </div>
+                              </a>                            
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                             <div class="fx2">
+
+                              <a href="http://am.iitd.ac.in/" target="_blank">
+                                  <div class="item">
+                                      <img class="transition img-responsive" src="images/project/5.png">
+                                      <h4>IIT Delhi (PHP)</h4>
+                                      <p>Visit: https://am.iitd.ac.in/</p>
+                                  </div>
+                              </a>                            
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                             <div class="fx2">
+
+                              <a href="https://www.iglnetwork.com/" target="_blank">
+                                  <div class="item">
+                                      <img class="transition img-responsive" src="images/project/6.png">
+                                      <h4>Gaming Website (MERN)</h4>
+                                      <p>Visit: https://www.iglnetwork.com/</p>
+                                  </div>
+                              </a>                            
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
+
+                    <div class="timeline">                       
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2021</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Full Stack Developer</span><small>Fiverr/Upwork/Guru</small></h3>
+                                <p>Freelancing for websites and mobile apps using MERN and React Native.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2019</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Web Developer<small>Raghwendra Web Services</small></h3>
+                                <p>Working as a full stack developer and develop web apps using PHP, CMS and Reactjs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2018</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Analyst<small>Eclerx Services Pvt. Ltd.</small></h3>
+                                <p>Big Data Analytics and Machine learning tools used for Comcast Network</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+
+                    <div class="timeline">                        
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2021</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Masters in Technology</span><small>BITS, Pilani</small></h3>
+                                <p>Software Systems specialized in Cyber Security</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2018</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Bachelors in Technology</span><small>AIET, Jaipur</small></h3>
+                                <p>Computer Science</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+<!-- Skills -->
+    <section class="about d-lg-flex justify-content-center align-items-center" id="skill">
+    
+              
+            <section class="section skills">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <div class="skills_section text-center">            
+                            <h2>Skills</h2>
+                              <div class="skills-area">
+                                  <div class="single-skill">
+                                      <div class="circlechart" data-percentage="92"><svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg"><circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle><circle class="circle-chart__circle success-stroke" stroke-dasharray="92,100" cx="16.9" cy="16.9" r="15.9"></circle><g class="circle-chart__info">   
+                                        <text class="circle-chart__percent" x="17.9" y="15.5" style="color: blue;">
+                                          92%
+                                        </text>
+                                        <text class="circle-chart__subline" x="16.91549431" y="22" style="color: blue;">
+                                          MERN Stack
+                                      </text> 
+                                    </g></svg></div>
+                                  </div>
+                                  <div class="single-skill">
+                                      <div class="circlechart" data-percentage="70"><svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg"><circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle><circle class="circle-chart__circle success-stroke" stroke-dasharray="90,100" cx="16.9" cy="16.9" r="15.9"></circle><g class="circle-chart__info">   
+                                        <text class="circle-chart__percent" x="17.9" y="15.5">
+                                          70%
+                                        </text>
+                                        <text class="circle-chart__subline" x="16.91549431" y="22">
+                                          React Native
+                                      </text> 
+                                    </g></svg></div>
+                                  </div>
+                                  <div class="single-skill">
+                                      <div class="circlechart" data-percentage="83"><svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg"><circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle><circle class="circle-chart__circle success-stroke" stroke-dasharray="85,100" cx="16.9" cy="16.9" r="15.9"></circle><g class="circle-chart__info">   
+                                        <text class="circle-chart__percent" x="17.9" y="15.5">
+                                          83%
+                                        </text>
+                                        <text class="circle-chart__subline" x="16.91549431" y="22">
+                                          Python
+                                      </text> 
+                                    </g></svg></div>
+                                  </div>
+                                  <div class="single-skill">
+                                      <div class="circlechart" data-percentage="88"><svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg"><circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle><circle class="circle-chart__circle success-stroke" stroke-dasharray="82,100" cx="16.9" cy="16.9" r="15.9"></circle><g class="circle-chart__info">   
+                                        <text class="circle-chart__percent" x="17.9" y="15.5">
+                                          88%
+                                        </text>
+                                        <text class="circle-chart__subline" x="16.91549431" y="22">
+                                          Cyber Security
+                                      </text> 
+                                    </g></svg></div>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          
+  </section>
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <!-- <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p class="footer-text mb-0">+91-8949030916</p>
+                  <p><a href="mailto:manthanpandey23@gmail.com">manthanpandey23@gmail.com</a></p>
+                </div>
+
+                <ul class="social-links">
+                     <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
+                     <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
+                </ul>
+            </div>
+          </div> -->
+
+          <div class="col-lg-12 col-12" style="text-align: center;">
+            <div class="contact-form">
+              <h2 class="mb-4">Interested to work together? Let's talk</h2>
+              <p>Call or WhatsApp on: +91-8949030916</p>
+              <p>Email ID: <a href="mailto:manthanpandey23@gmail.com">manthanpandey23@gmail.com</a></p>
+             
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2021 . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a>Manthan Pandey</a></p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/Headroom.js"></script>
+    <script src="./js/jQuery.headroom.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/smoothscroll.js"></script>
+    <script src="./js/custom.js"></script>
+
+    <script>
+      function makesvg(percentage, inner_text=""){
+      
+      var abs_percentage = Math.abs(percentage).toString();
+      var percentage_str = percentage.toString();
+      var classes = ""
+      
+      if(percentage < 0){
+        classes = "danger-stroke circle-chart__circle--negative";
+      } else if(percentage > 0 && percentage <= 30){
+        classes = "warning-stroke";
+      } else{
+        classes = "success-stroke";
+      }
+      
+      var svg = '<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">'
+         + '<circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9" />'
+         + '<circle class="circle-chart__circle '+classes+'"'
+         + 'stroke-dasharray="'+ abs_percentage+',100"    cx="16.9" cy="16.9" r="15.9" />'
+         + '<g class="circle-chart__info">'
+         + '   <text class="circle-chart__percent" x="17.9" y="15.5">'+percentage_str+'%</text>';
+      
+      if(inner_text){
+        svg += '<text class="circle-chart__subline" x="16.91549431" y="22">'+inner_text+'</text>'
+      }
+      
+      svg += ' </g></svg>';
+      
+      return svg
+      }
+      
+      (function( $ ) {
+      
+        $.fn.circlechart = function() {
+            this.each(function() {
+                var percentage = $(this).data("percentage");
+                var inner_text = $(this).text();
+                $(this).html(makesvg(percentage, inner_text));
+            });
+            return this;
+        };
+      
+      }( jQuery ));
+      
+      $(function () {
+         $('.circlechart').circlechart();
+      });
+      </script>    
+
+  </body>
+</html>
